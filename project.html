@@ -1,0 +1,183 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonstawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="shortcut icon" href="./img/icon/icon.png" type="image/x-icon" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Home</title>
+  </head>
+  <body class="bg-gradient-to-br from-slate-300 via-blue-200 to-sky-300 dark:from-indigo-900 dark:to-slate-900">
+    <nav class="bg-gradient-to-br from-sky-300 to-blue-300 text-blue-900 dark:from-indigo-900 dark:to-slate-900 dark:text-blue-300 w-full fixed shadow-lg shadow-sky-400/40 dark:shadow-black/40 z-50">
+        <div class="flex flex-col lg:flex-row lg:justify-between lg:px-16 ite">
+          <div class="flex justify-between m-5 items-center">
+            <div>
+              <a href="./" class="uppercase font-semibold text-xl hover:text-white">rayhunts</a>
+            </div>
+            <div class="">
+              <div class="inline-block hover:text-white mr-3 lg:hidden cursor-pointer active:animate-ping" id="dark1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path id="isDark1" class="hidden" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                  <path id="isLight1" fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <button class="focus:outline-none hover:text-white inline-block lg:hidden" id="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path id="ham" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                  <path id="cross" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              </div>
+            </div>
+            <div class="items-center block lg:flex">
+              <div class="hidden lg:inline-block p-5 cursor-pointer hover:text-white" id="dark2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path id="isDark2" class="hidden" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                  <path id="isLight2" fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="lg:flex flex-col lg:flex-row hidden " id="menu">
+                <a class="block hover:text-white  p-5" href="./">Home</a>
+                <a class="block hover:text-white  p-5" href="/about.html">About</a>
+                <a class="block hover:text-white  p-5" href="/project.html">Project</a>
+                <a class="block hover:text-white  p-5" href="/contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="pt-32">
+        <div class="flex justify-center items-center">
+            <div class="lg:mx-24 text-lg w-10/12 md:w-9/12 text-slate-800 dark:text-blue-200">
+              <h1 class="text-4xl font-bold mb-3">My projects</h1>
+              <div class="flex flex-wrap w-full py-5 justify-evenly text-sm gap-1">
+                <div class="w-72 flex flex-col m-2 md:lg:flex-row lg:flex-row justify-start items-center p-5 bg-white/20 backdrop-blur-sm dark:bg-black/20 rounded-xl">
+                  <img class="hover:scale-150 transition md:mr-3 lg:mr-3 mb-3 w-2/5" src="./img/fatahacoco.png" alt="" />
+                  <div class="w-3/5 flex flex-col gap-1">
+                    <h1>Business Landing Page</h1>
+                    <p class="font-light text-sm">Web adress : <a class="hover:font-normal" href="//fatahacoco.com" target="_blank">fatahacoco.com</a></p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Responsive</p>
+                    <div class="flex text-blue-200 dark:text-indigo-900 text-sm justify-center mt-2 gap-3">
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-html5"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-css3-alt"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-js"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-72 flex flex-col m-2 md:lg:flex-row lg:flex-row justify-start items-center p-5 bg-white/20 backdrop-blur-sm dark:bg-black/20 rounded-xl">
+                  <img class="hover:scale-150 transition md:mr-3 lg:mr-3 mb-3 w-2/5" src="./img/madin.png" alt="" />
+                  <div class="w-3/5 flex flex-col gap-1">
+                    <h1>Admin Dashboard</h1>
+                    <p class="font-light text-sm">Web adress : <a class="hover:font-normal" href="//madin-dwk.rf.gd" target="_blank">madin-dwk.rf.gd</a></p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Responsive</p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Dark Mode</p>
+                    <div class="flex text-blue-200 dark:text-indigo-900 text-sm justify-center mt-2 gap-3">
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-html5"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-css3-alt"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-js"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-72 flex flex-col m-2 md:lg:flex-row lg:flex-row justify-start items-center p-5 bg-white/20 backdrop-blur-sm dark:bg-black/20 rounded-xl">
+                  <img class="hover:scale-150 transition md:mr-3 lg:mr-3 mb-3 w-2/5" src="./img/madin-dark.png" alt="" />
+                  <div class="w-3/5 flex flex-col gap-1">
+                    <h1>Admin Dashboard</h1>
+                    <p class="font-light text-sm">Web adress : <a class="hover:font-normal" href="//madin-dwk.rf.gd" target="_blank">madin-dwk.rf.gd</a></p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Responsive</p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Dark Mode</p>
+                    <div class="flex text-blue-200 dark:text-indigo-900 text-sm justify-center mt-2 gap-3">
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-html5"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-css3-alt"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-js"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-72 flex flex-col m-2 md:lg:flex-row lg:flex-row justify-start items-center p-5 bg-white/20 backdrop-blur-sm dark:bg-black/20 rounded-xl">
+                  <img class="hover:scale-150 transition md:mr-3 lg:mr-3 mb-3 w-2/5" src="./img/fatahacoco-mobile.png" alt="" />
+                  <div class="w-3/5 flex flex-col gap-1">
+                    <h1>Business Landing Page</h1>
+                    <p class="font-light text-sm">Web adress : <a class="hover:font-normal" href="//fatahacoco.com" target="_blank">fatahacoco.com</a></p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Responsive</p>
+                    <div class="flex text-blue-200 dark:text-indigo-900 text-sm justify-center mt-2 gap-3">
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-html5"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-css3-alt"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-js"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-72 flex flex-col m-2 md:lg:flex-row lg:flex-row justify-start items-center p-5 bg-white/20 backdrop-blur-sm dark:bg-black/20 rounded-xl">
+                  <img class="hover:scale-150 transition md:mr-3 lg:mr-3 mb-3 w-2/5" src="./img/madin-mobile.png" alt="" />
+                  <div class="w-3/5 flex flex-col gap-1">
+                    <h1>Admin Dashboard</h1>
+                    <p class="font-light text-sm">Web adress : <a class="hover:font-normal" href="//madin-dwk.rf.gd" target="_blank">madin-dwk.rf.gd</a></p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Responsive</p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Dark Mode</p>
+                    <div class="flex text-blue-200 dark:text-indigo-900 text-sm justify-center mt-2 gap-3">
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-html5"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-css3-alt"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-js"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-72 flex flex-col m-2 md:lg:flex-row lg:flex-row justify-start items-center p-5 bg-white/20 backdrop-blur-sm dark:bg-black/20 rounded-xl">
+                  <img class="hover:scale-150 transition md:mr-3 lg:mr-3 mb-3 w-2/5" src="./img/madin-dark-mobile.png" alt="" />
+                  <div class="w-3/5 flex flex-col gap-1">
+                    <h1>Admin Dashboard</h1>
+                    <p class="font-light text-sm">Web adress : <a class="hover:font-normal" href="//madin-dwk.rf.gd" target="_blank">madin-dwk.rf.gd</a></p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Responsive</p>
+                    <p class="text-sm"><i class="fa-solid fa-circle-check"></i> Dark Mode</p>
+                    <div class="flex text-blue-200 dark:text-indigo-900 text-sm justify-center mt-2 gap-3">
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-html5"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-css3-alt"></i>
+                      </div>
+                      <div class="flex justify-center items-center rounded-full w-7 h-7 bg-slate-800 dark:bg-blue-200 p-3">
+                        <i class="fa-brands fa-js"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

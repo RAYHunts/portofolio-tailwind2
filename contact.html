@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonstawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="shortcut icon" href="./img/icon/icon.png" type="image/x-icon" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Home</title>
+  </head>
+  <body class="bg-gradient-to-br from-slate-300 via-blue-200 to-sky-300 dark:from-indigo-900 dark:to-slate-900">
+    <nav class="bg-gradient-to-br from-sky-300 to-blue-300 text-blue-900 dark:from-indigo-900 dark:to-slate-900 dark:text-blue-300 w-full fixed shadow-lg shadow-sky-400/40 dark:shadow-black/40 z-50">
+        <div class="flex flex-col lg:flex-row lg:justify-between lg:px-16 ite">
+          <div class="flex justify-between m-5 items-center">
+            <div>
+              <a href="./" class="uppercase font-semibold text-xl hover:text-white">rayhunts</a>
+            </div>
+            <div class="">
+              <div class="inline-block hover:text-white mr-3 lg:hidden cursor-pointer active:animate-ping" id="dark1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path id="isDark1" class="hidden" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                  <path id="isLight1" fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <button class="focus:outline-none hover:text-white inline-block lg:hidden" id="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path id="ham" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                  <path id="cross" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              </div>
+            </div>
+            <div class="items-center block lg:flex">
+              <div class="hidden lg:inline-block p-5 cursor-pointer hover:text-white" id="dark2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path id="isDark2" class="hidden" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                  <path id="isLight2" fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="lg:flex flex-col lg:flex-row hidden " id="menu">
+                <a class="block hover:text-white  p-5" href="./">Home</a>
+                <a class="block hover:text-white  p-5" href="/about.html">About</a>
+                <a class="block hover:text-white  p-5" href="/project.html">Project</a>
+                <a class="block hover:text-white  p-5" href="/contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="pt-32">
+        <div class="flex w-screen justify-center items-center h-4/6">
+            <div class="w-4/5 sm:w-4/6 md:w-1/2 lg:w-1/3 p-5 bg-white/30 dark:bg-black/30 backdrop-blur-md rounded-xl text-blue-700 dark:text-sky-200">
+              <h1 class="text-center text-2xl font-bold text-indigo-800 dark:text-indigo-400">Contact Me</h1>
+              <form name="contactMe">
+                <label class="font-semibold" for="nama">Name</label>
+                <input required type="text" id="nama" name="name" class="w-full h-9 rounded-sm my-3 bg-white/20 dark:bg-black/20 focus:outline-none focus:ring-2 focus:ring-blue-700 dark:focus:ring-indigo-800 dark:caret-blue-200 caret-indigo-800" />
+                <label class="font-semibold" for="email">Email</label>
+                <input
+                  required
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full h-9 rounded-sm my-3 bg-white/20 dark:bg-black/20 focus:outline-none focus:ring-2 focus:ring-blue-700 dark:focus:ring-indigo-800 dark:caret-blue-200 caret-indigo-800 invalid:ring-red-700 autofill:bg-yellow-200"
+                />
+                <label class="font-semibold" for="subject">Subject</label>
+                <input
+                  required
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="w-full h-9 rounded-sm my-3 bg-white/20 dark:bg-black/20 focus:outline-none focus:ring-2 focus:ring-blue-700 dark:focus:ring-indigo-800 dark:caret-blue-200 caret-indigo-800"
+                />
+                <label class="font-semibold" for="message">Type your message here...</label>
+                <textarea
+                  required
+                  type="text"
+                  id="body"
+                  name="message"
+                  class="w-full h-32 rounded-tr-2xl my-3 leading-relaxed bg-white/20 dark:bg-black/20 focus:outline-none focus:ring-2 focus:ring-blue-700 dark:focus:ring-indigo-800 dark:caret-blue-200 caret-indigo-800 resize-none"
+                ></textarea>
+                <button id="sendBtn" type="submit" class="bg-indigo-800 dark:bg-indigo-400 text-blue-100 font-semibold dark:text-indigo-900 px-3 py-1 rounded-lg mt-3">Submit</button>
+                <button id="sendingBtn" class="bg-indigo-800/50 dark:bg-indigo-400/50 text-blue-100 font-semibold dark:text-indigo-900 px-3 py-1 rounded-lg mt-3 hidden">Loading <i class="fa-solid animate-spin fa-circle-notch"></i></button>
+              </form>
+            </div>
+          </div>
+          
+          
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

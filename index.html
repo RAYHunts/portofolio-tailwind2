@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonstawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="shortcut icon" href="./img/icon/icon.png" type="image/x-icon" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Home</title>
+  </head>
+  <body class="bg-gradient-to-br from-slate-300 via-blue-200 to-sky-300 dark:from-indigo-900 dark:to-slate-900">
+    <nav class="bg-gradient-to-br from-sky-300 to-blue-300 text-blue-900 dark:from-indigo-900 dark:to-slate-900 dark:text-blue-300 w-full fixed shadow-lg shadow-sky-400/40 dark:shadow-black/40 z-50">
+        <div class="flex flex-col lg:flex-row lg:justify-between lg:px-16 ite">
+          <div class="flex justify-between m-5 items-center">
+            <div>
+              <a href="./" class="uppercase font-semibold text-xl hover:text-white">rayhunts</a>
+            </div>
+            <div class="">
+              <div class="inline-block hover:text-white mr-3 lg:hidden cursor-pointer active:animate-ping" id="dark1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path id="isDark1" class="hidden" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                  <path id="isLight1" fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <button class="focus:outline-none hover:text-white inline-block lg:hidden" id="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path id="ham" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                  <path id="cross" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              </div>
+            </div>
+            <div class="items-center block lg:flex">
+              <div class="hidden lg:inline-block p-5 cursor-pointer hover:text-white" id="dark2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path id="isDark2" class="hidden" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                  <path id="isLight2" fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="lg:flex flex-col lg:flex-row hidden " id="menu">
+                <a class="block hover:text-white  p-5" href="./">Home</a>
+                <a class="block hover:text-white  p-5" href="/about.html">About</a>
+                <a class="block hover:text-white  p-5" href="/project.html">Project</a>
+                <a class="block hover:text-white  p-5" href="/contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="pt-32">
+        <div class="flex h-4/6 justify-center items-center">
+            <div class="h-96 w-4/5 max-w-screen-sm flex justify-center items-center flex-col text-center backdrop-blur-md rounded-xl bg-white/20 dark:bg-black/20 text-white leading-6 p-3">
+              <div class="text-green-800 dark:text-amber-600">
+                <i class="fa-solid fa-circle absolute top-0 right-0 text-md animate-ping"></i>
+                <i class="fa-solid fa-circle absolute top-0 right-0 text-md"></i>
+              </div>
+              <img class="opacity-100 border-8 dark:border-indigo-400 border-indigo-900 w-40 md:w-48 lg:w-52 mt-3 justify-self-center rounded-full" src="./img/me.jpg" alt="" />
+              <h1 class="text-2xl mt-3 font-semibold text-blue-900 dark:text-sky-300">Muhammad Roihan Ainul Yaqin</h1>
+              <p class="dark:text-blue-200 mt-3 text-slate-700 text-lg">Web Developer | Programmer</p>
+              <div class="flex w-64 h-10 justify-between px-5 text-2xl items-center my-3 text-indigo-400">
+                <a class="dark:hover:text-blue-100 hover:text-indigo-900" href="https://www.instagram.com/rayhuntss/"><i class="fa-brands fa-instagram"></i></a>
+                <a class="dark:hover:text-blue-100 hover:text-indigo-900" href="https://github.com/RAYHunts"><i class="fa-brands fa-github"></i></a>
+                <a class="dark:hover:text-blue-100 hover:text-indigo-900" href="https://github.com/RAYHunts"><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="dark:hover:text-blue-100 hover:text-indigo-900" href=""><i class="fa-solid fa-envelope"></i></a>
+                <a class="dark:hover:text-blue-100 hover:text-indigo-900" href=""><i class="fa-brands fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
